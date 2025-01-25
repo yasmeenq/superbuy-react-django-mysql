@@ -43,7 +43,7 @@ Django REST Framework (DRF) is used to fetch data from the client and save it to
 1. Create URLs for `api`.
 2. Add `api` URLs to the main app URLs.
 
-### Run App 🚀:
+### Run App 😃:
 ```sh
 cd ..  # (get out of src)
 py src/manage.py runserver 8001
