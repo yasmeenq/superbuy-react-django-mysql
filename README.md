@@ -1,48 +1,51 @@
-1.	started with Database (summary TDL)
+# Project Overview
 
-2.	Django Backend:
-Start with installations:
-    1.	py -m venv env
-    2.	env/scripts/activate
-    3.	pip install django
-    4.	pip install djangorestframework
-    5.	pip install mysqlclient
-    6.	django-admin startproject store src (create src folder first)
-    7.	cd src
-    8.	py manage.py startapp api (this is a way to create apps in Django instead of api write your app name)
-    9.	pip install django-cors-headers
-    10.	pip install python-dotenv
-    11.	pip freeze > requirements.txt
+## 1. Started with Database (Summary TDL)
 
-Configure Settings:
-    1. add the apps you downloaded to installed apps.
-    2. connect the database{
-        a. create utils>appConfig to store the keys.
-        b. store the values in .env for privacy.
-    }
+## 2. Django Backend
 
-Create Models and Serializers:
-    1. create models for your tables - don't forget to add
-    class Meta to your model.
-    2. then create serializers for your models (converts to json).
+### Start with Installations:
+```sh
+py -m venv env
+env/scripts/activate
+pip install django
+pip install djangorestframework
+pip install mysqlclient
+django-admin startproject store src  # (create src folder first)
+cd src
+py manage.py startapp api  # (this is a way to create apps in Django, instead of 'api', write your app name)
+pip install django-cors-headers
+pip install python-dotenv
+pip freeze > requirements.txt
+```
 
-Make Migrations:
-    py manage.py makemigrations
-    py manage.py migrate api
-    note: if you already created your tables in mySQL workbench,
-    you might need different steps. like fake migrations. google
-    your errors.
+### Configure Settings:
+1. Add the apps you downloaded to `INSTALLED_APPS`.
+2. Connect the database:
+   - Create `utils/appConfig` to store the keys.
+   - Store the values in `.env` for privacy.
 
-Create Views:
-    its Django rest framework (DRF) thingy to 
-    fetch data from client => save to Database.
+### Create Models and Serializers:
+1. Create models for your tables - don't forget to add `class Meta` to your model.
+2. Then create serializers for your models (converts to JSON).
 
-Create URLs:
-    1. create urls for api.
-    2. add api urls to main app urls.
+### Make Migrations:
+```sh
+py manage.py makemigrations
+py manage.py migrate api
+```
+> **Note:** If you already created your tables in MySQL Workbench, you might need different steps like fake migrations. Google your errors.
 
-Run App =D :
-    cd .. (get out of src)
-    py src/manage.py runserver 8001
-    now go to http://127.0.0.1:8001/api/yourURL 
-     
+### Create Views:
+Django REST Framework (DRF) is used to fetch data from the client and save it to the database.
+
+### Create URLs:
+1. Create URLs for `api`.
+2. Add `api` URLs to the main app URLs.
+
+### Run App 🚀:
+```sh
+cd ..  # (get out of src)
+py src/manage.py runserver 8001
+```
+Now go to [http://127.0.0.1:8001/api/yourURL](http://127.0.0.1:8001/api/yourURL)
