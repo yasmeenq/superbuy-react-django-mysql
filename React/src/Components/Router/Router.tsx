@@ -1,10 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import "./Routing.css";
 import { Products } from "../ProuductsArea/Products/Products";
 import { ProductDetails } from "../ProuductsArea/ProductDetails/ProductDetails";
 import { HomeArea } from "../HomeArea/HomeArea";
 
-export function Routing(): JSX.Element {
+export function Router(): JSX.Element {
   return (
     <div className="Routing">
       <Routes>

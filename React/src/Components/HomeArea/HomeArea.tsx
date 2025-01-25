@@ -14,6 +14,7 @@ export function HomeArea(): JSX.Element {
         <div className={css.HomeArea}>
 			<button onClick={showSuccess}>Success</button>
             <button onClick={showError}>Error</button>
+            add categories here
         </div>
     );
 }

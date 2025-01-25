@@ -3,6 +3,7 @@ from rest_framework.serializers import ModelSerializer
 
 
 class ProductModel(models.Model):
+    id = models.IntegerField(primary_key=True)
     title = models.CharField(max_length=255)
     description = models.TextField()
     category = models.CharField(max_length=255)  

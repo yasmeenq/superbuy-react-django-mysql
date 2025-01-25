@@ -1,13 +1,25 @@
 .Layout {
-	display: grid;
-    background-color: aqua;
     height: 100%;
-    grid-template-rows: 10% 85% 5%;
+    box-sizing: border-box;
+	display: grid;
     grid-template-columns: 1fr;
-    padding: 0;
-    margin: 0;
+    grid-template-rows: 12% 84% 4%;
+    
 }
 
-.Layout > *{
-    border: 1px solid black;
+header, footer{
+    grid-column: span 2;
+}
+
+main{
+    overflow: auto;
+}
+
+.Layout, .Layout > *{
+    border: 1px solid #074a6b;
+}
+
+a{
+    text-decoration: none;
+    color: #074a6b;
 }

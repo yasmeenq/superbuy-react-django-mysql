@@ -1,3 +1,14 @@
 .Products {
-	
+    padding: 0 50px 0 50px;
+
+}
+
+
+.productsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.productCard{
+    border: 1px solid grey;
 }

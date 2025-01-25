@@ -1,4 +1,4 @@
-import { Routing } from "../../Routing/Routing";
+import { Router } from "../../Router/Router";
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
 import css from "./Layout.module.css";
@@ -11,7 +11,7 @@ export function Layout(): JSX.Element {
             </header>
 
             <main>
-                <Routing />
+                <Router />
             </main>
 
             <footer>
