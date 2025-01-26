@@ -1,8 +1,9 @@
 # Project Overview
 
-## 1. Started with Database (Summary TDL)
+## 1. MySQL Workbench -Database:
+(Summary TDL)
 
-## 2. Django Backend
+## 2. Django -Backend:
 
 ### Start with Installations:
 ```sh
@@ -53,7 +54,7 @@ Now go to [http://127.0.0.1:8001/api/yourURL](http://127.0.0.1:8001/api/yourURL)
 **Note:** you can test it in Postman 
 
 
-## 3. React-Typescript Frontend: 
+## 3. React-Typescript -Frontend: 
 
 ### Start with Installations:
 ```sh
