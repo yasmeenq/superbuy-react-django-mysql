@@ -51,7 +51,7 @@ py src/manage.py runserver 8001
 ```
 Now go to [http://127.0.0.1:8001/api/yourURL](http://127.0.0.1:8001/api/yourURL)
 
-**Note:** you can test it in Postman 
+> **Note:** you can test it in Postman 
 
 
 ## 3. React-Typescript -Frontend: 
